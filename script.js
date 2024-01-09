@@ -4,7 +4,8 @@ const form = document.querySelector(".wrapper form"),
 fullURL = form.querySelector("input"),
 shortenBtn  = form.querySelector("button"),
 blurEffect  = document.querySelector(".blur-effect"),
-popupBox  = document.getElementById("popup-box");
+popupBox  = document.getElementById("popup-box"),
+shortenURL  = popupBox.querySelector("input");
 
 
 form.onsubmit = (e)=>{
@@ -21,6 +22,9 @@ shortenBtn.onclick = ()=>{
             if(data.length <= 5){
                 blurEffect.style.display = "block";
                 popupBox.classList.add("show");
+
+                let domain = "localhost/url/";
+                shortenURL.value = domain + data;
             }else{
                 alert(data);
             }
