@@ -34,3 +34,8 @@ shortenBtn.onclick = ()=>{
     let formData = new FormData(form); //Creating new FormData Object
     xhr.send(formData); //Sending form value to Php
 }
+
+blurEffect.onclick = () => {
+    blurEffect.style.display = "none";
+    popupBox.classList.remove("show")
+}
