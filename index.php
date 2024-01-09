@@ -171,7 +171,7 @@
       Your Short Link is ready. You can also edit your link now but can't edit once saved.</div>
     <form action="">
       <label>Edit Shorten URL</label>
-      <input type="text" spellcheck="false" value="example.com/xyz123">
+      <input type="text" spellcheck="false" value="">
       <i class="fa-solid fa-copy copy-icon"></i>
       <button>Save</button>
     </form>
